@@ -1,0 +1,29 @@
+@use '../foundation/variable' as *;
+
+#canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page{
+  width: 100%;
+  height: 2000px;
+  background-blend-mode: multiply;
+  &.is-1{
+    background: rgb(251, 255, 230, .8);
+  }
+  &.is-2{
+    background: rgb(229, 255, 248, .8);
+  }
+  &.is-3{
+    background: rgba(240, 250, 255, 0.8);
+  }
+  &.is-4{
+    background: rgba(255, 249, 248, 0.8);
+  }
+}
