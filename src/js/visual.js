@@ -55,7 +55,6 @@ let tex = new THREE.TextureLoader().load(textureImg);
 let tex2 = new THREE.TextureLoader().load(textureImg2);
 let tex3 = new THREE.TextureLoader().load(textureImg3);
 let tex4 = new THREE.TextureLoader().load(textureImg4);
-// scene.background = tex;
 
 // Geometry
 const width = 1024;
@@ -104,7 +103,6 @@ const material = new THREE.ShaderMaterial({
 
 // Mesh
 const mesh = new THREE.Points(geometry, material);
-// mesh.rotation.x = -Math.PI / 2;
 scene.add(mesh);
 
 // Resize
@@ -136,7 +134,6 @@ const pages = document.querySelectorAll(".page");
 let scrollProgress = { value: 0 };
 
 pages.forEach((page, index) => {
-  console.log(page);
   gsap.to(page, {
     scrollTrigger: {
       trigger: page,
