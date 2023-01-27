@@ -3,6 +3,8 @@ import glslify from "vite-plugin-glslify";
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/three-flying-perticles/",
+  outDir: "./docs",
   vite: {
     plugins: [
       // glsl({
