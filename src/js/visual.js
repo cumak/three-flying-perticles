@@ -187,4 +187,4 @@ gui
 //   .step(0.001)
 //   .name("uScrollProgress");
 
-// gui.show(false);
+gui.show(false);
