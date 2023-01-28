@@ -42427,7 +42427,6 @@ let tex = new TextureLoader().load(textureImg);
 let tex2 = new TextureLoader().load(textureImg2);
 let tex3 = new TextureLoader().load(textureImg3);
 let tex4 = new TextureLoader().load(textureImg4);
-// scene.background = tex;
 
 // Geometry
 const width = 1024;
@@ -42476,7 +42475,6 @@ const material = new ShaderMaterial({
 
 // Mesh
 const mesh = new Points(geometry, material);
-// mesh.rotation.x = -Math.PI / 2;
 scene.add(mesh);
 
 // Resize
@@ -42508,7 +42506,6 @@ const pages = document.querySelectorAll(".page");
 let scrollProgress = { value: 0 };
 
 pages.forEach((page, index) => {
-  console.log(page);
   gsapWithCSS.to(page, {
     scrollTrigger: {
       trigger: page,
@@ -42556,4 +42553,4 @@ gui
 //   .step(0.001)
 //   .name("uScrollProgress");
 
-// gui.show(false);
+gui.show(false);
